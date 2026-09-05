@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crusty AI Marketing Poop</title>
+<meta name="description" content="Crusty AI Marketing Poop. A newsletter, a bad attitude, and a New Year's Eve comedy night at Suite on the Upper West Side.">
+<meta property="og:title" content="Crusty AI Marketing Poop">
+<meta property="og:description" content="New Year's Eve comedy night at Suite, Upper West Side. Plus the newsletter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crustyaimarketingpoop.camp/">
+<meta name="theme-color" content="#1b1310">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%A9%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     EDIT ME: everything that changes lives here.
+     ============================================================ -->
+<script>
+window.SITE = {
+  substackUrl: "https://clayvickers.substack.com",
+  instagram: "",                       // e.g. "https://instagram.com/yourhandle" (leave "" to hide)
+  contactEmail: "vickers621@gmail.com",
+
+  event: {
+    confirmed: false,                  // flip to true once Suite says yes
+    title: "New Year's Eve Comedy Night",
+    dateISO: "2026-12-31T21:00:00-05:00",   // doors/show start, ET
+    dateText: "Wednesday, December 31, 2026",
+    timeText: "Doors 9 PM · Show 10 PM · Midnight countdown",
+    price: "Free with a drink in your hand",   // or "$20 advance / $25 door"
+    ticketUrl: "",                     // Eventbrite / Partiful / Venmo link; "" = show RSVP-by-email
+    venue: {
+      name: "Suite",
+      tagline: "A gay pub with a local feel",
+      address: "992 Amsterdam Ave (at 109th St)",
+      city: "Upper West Side, New York, NY 10025",
+      mapsUrl: "https://maps.google.com/?q=Suite+992+Amsterdam+Ave+New+York+NY+10025",
+      url: "https://suitenyc.com",
+      phone: "(212) 222-4600"
+    },
+    lineup: [
+      // { name: "Comic Name", credit: "Comedy Cellar, Netflix", url: "" },
+    ]
+  }
+};
+</script>
+
+<header class="nav">
+  <a class="brand" href="/">Crusty<span>AI</span>Marketing<span>Poop</span></a>
+  <nav>
+    <a href="#nye">NYE at Suite</a>
+    <a href="#newsletter">Newsletter</a>
+    <a id="nav-substack" href="#" target="_blank" rel="noopener">Substack ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <p class="kicker">crustyaimarketingpoop.camp</p>
+  <h1>Crusty<br>AI<br>Marketing<br>Poop.</h1>
+  <p class="lede">A newsletter about marketing, the machines that are ruining it, and trying to make it through another day. Also: we're throwing a comedy show on New Year's Eve.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#nye">NYE Comedy Night →</a>
+    <a class="btn btn-ghost" id="hero-substack" href="#" target="_blank" rel="noopener">Read the newsletter</a>
+  </div>
+</section>
+
+<section id="nye" class="event">
+  <div class="event-card">
+    <div id="pending-ribbon" class="ribbon" hidden>Venue confirmation pending</div>
+
+    <p class="kicker">Live comedy · New Year's Eve</p>
+    <h2 id="ev-title">New Year's Eve Comedy Night</h2>
+    <p class="event-sub">at <a id="ev-venue-link" href="#" target="_blank" rel="noopener"><strong id="ev-venue">Suite</strong></a>, <span id="ev-venue-tagline"></span></p>
+
+    <div class="countdown" aria-live="polite">
+      <div><b id="cd-d">--</b><span>days</span></div>
+      <div><b id="cd-h">--</b><span>hrs</span></div>
+      <div><b id="cd-m">--</b><span>min</span></div>
+      <div><b id="cd-s">--</b><span>sec</span></div>
+    </div>
+
+    <dl class="facts">
+      <div><dt>When</dt><dd><span id="ev-date"></span><br><span id="ev-time" class="muted"></span></dd></div>
+      <div><dt>Where</dt><dd><a id="ev-map" href="#" target="_blank" rel="noopener"><span id="ev-address"></span></a><br><span id="ev-city" class="muted"></span></dd></div>
+      <div><dt>Cover</dt><dd id="ev-price"></dd></div>
+    </dl>
+
+    <div class="lineup">
+      <h3>Lineup</h3>
+      <ul id="lineup"></ul>
+      <p id="lineup-empty" class="muted">Lineup announced soon. Comics: want a spot? <a id="lineup-email" href="#">Email us</a>.</p>
+    </div>
+
+    <div class="cta-row">
+      <a id="ev-cta" class="btn btn-primary" href="#">RSVP</a>
+      <a id="ev-cal" class="btn btn-ghost" href="#" download="nye-comedy-night-suite.ics">Add to calendar</a>
+    </div>
+    <p class="fine">21+ · Karaoke and dancing after the show · Ring in 2027 somewhere with a real bar and real people.</p>
+  </div>
+
+  <aside class="why">
+    <h3>Why a comedy show at a bar on 109th Street?</h3>
+    <p>Because Times Square is a hostage situation, the “open bar” tickets are $250, and Suite already knows how to run a Monday comedy night. New Year's Eve just deserves a better one.</p>
+    <p>Stand-up until the countdown. Then the karaoke machine comes out and nobody is safe.</p>
+  </aside>
+</section>
+
+<section id="newsletter" class="newsletter">
+  <div>
+    <p class="kicker">The newsletter</p>
+    <h2>Marketing is fine. It's the AI slop that's crusty.</h2>
+    <p>Occasional dispatches on ad tech, podcast advertising, the tools that promise to automate your job, and the people who have to clean up after them. Free. Cancel by never opening it, like every other newsletter.</p>
+    <a class="btn btn-primary" id="nl-substack" href="#" target="_blank" rel="noopener">Subscribe on Substack ↗</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Crusty AI Marketing Poop · <a id="foot-email" href="#">Contact</a> · <a id="foot-substack" href="#" target="_blank" rel="noopener">Substack</a> <span id="foot-ig-wrap" hidden>· <a id="foot-ig" href="#" target="_blank" rel="noopener">Instagram</a></span></p>
+  <p class="fine">Not affiliated with Suite until Suite says so. No AI wrote the jokes. One helped with the CSS.</p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
