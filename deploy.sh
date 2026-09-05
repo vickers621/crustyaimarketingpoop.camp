@@ -2,6 +2,7 @@
 # One-shot: create the GitHub repo, push, enable Pages with the custom domain.
 # Usage: ./deploy.sh <github-owner> [repo-name]   (needs `gh auth login` as that owner)
 set -euo pipefail
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:$PATH"
 OWNER="${1:?github owner/username}"; REPO="${2:-crustyaimarketingpoop.camp}"
 cd "$(dirname "$0")"
 gh repo create "$OWNER/$REPO" --public --source=. --remote=origin --push
